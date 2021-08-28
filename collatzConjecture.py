@@ -3,13 +3,13 @@
 # Pick a number
 # If number is odd, multiply by 3 and add 1
 # If number is even, divide by 2
+# Record the maximum value of x
 # If number equals 1, exit
 # Count the iterations to the exit
 #
 import datetime as dt
 from datetime import timedelta
 #
-startedAt = dt.datetime.now()
 validInput = False
 while not validInput:
     x = input("Enter the seed number: ")
@@ -23,6 +23,7 @@ while not validInput:
 # Set iterations to 0
 i = 0
 maxValue = 0
+startedAt = dt.datetime.now()
 while x > 1:
     if x % 2 == 0:
         x /= 2
