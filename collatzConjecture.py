@@ -35,4 +35,4 @@ while x > 1:
 print(f"Iterations   : {i}")
 print(f"Maximum Value: {int(maxValue):,.0f}")
 endedAt = dt.datetime.now()
-print(f"Runtime: {(endedAt - startedAt).seconds} seconds")
+print(f"Runtime: {(endedAt - startedAt).seconds}.{(endedAt - startedAt).microseconds} seconds")
