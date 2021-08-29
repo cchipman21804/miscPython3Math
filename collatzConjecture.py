@@ -20,8 +20,8 @@ while not validInput:
     else:
         validInput = True
 #
-# Set iterations to 0
-i = 0
+# Set steps to 0
+s = 0
 maxValue = 0
 startedAt = dt.datetime.now()
 while x > 1:
@@ -31,9 +31,9 @@ while x > 1:
         x = x*3 + 1
     if x > maxValue:
         maxValue = x
-    i += 1
+    s += 1
     print(int(x))
-print(f"Iterations   : {i}")
+print(f"Steps   : {s}")
 print(f"Maximum Value: {int(maxValue):,.0f}")
 endedAt = dt.datetime.now()
 print(f"Runtime: {(endedAt - startedAt).seconds}.{(endedAt - startedAt).microseconds} seconds")
